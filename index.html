@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<script src="scripts.js"></script>
+
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&display=swap">
+</head>
+<title>
+    Icey's page 🧊
+</title>
+
+<body>
+    <div class="content">
+        <!-- Logo -->
+        <div class="mainlogo">
+            <input type="image" src="/media/IceyBanner.png" alt="mainlogo">
+        </div>
+    
+        <!-- Tab links. -->
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'info')">info</button>
+            <button class="tablinks" onclick="openTab(event, 'links')">links</button>
+            <button class="tablinks" onclick="openTab(event, 'projects')">projects</button>
+            <button class="tablinks" onclick="openTab(event, 'cats')">cats</button>
+        </div>
+
+        <!-- Tab content -->
+        <div id="info" class="tabcontent">
+            <h1 class="title">Icey's page</h1>
+            <div class="mainInfo">
+                <p>heya 👋! i'm evy, you can also call me max. i'm a nonbinary person that is interested in computers 'n stuff.</p>
+                <p>there is currently not much here, but i hope that as i gain coding experience, i'll add stuff.</p>
+                <p>this is my little corner of the web.</p>
+            </div>
+        </div>
+
+        <div id="links" class="tabcontent">
+            <div class="mainInfo">
+                socials:
+            </div>
+            <div class="buttonsContainer">
+                <div class="containerBttn">
+                    <button type="button" class="bttn" onclick="location.href='https://www.youtube.com/@Max373-1.0'">my youtube</button>
+                </div>
+                <div class="containerBttn">
+                    <button type="button" class="bttn" onclick="location.href='https://twitter.com/eveeeeee00'">my twitter</button>
+                </div>
+                <div class="containerBttn">
+                    <button type="button" class="bttn" onclick="location.href='https://blahaj.zone/@eveee'">fediverse!</button>
+                </div>
+                <div class="containerBttn">
+                    <img class="center-image" src="https://lanyard.cnrad.dev/api/675299056070688789" alt="Discord Status" width="350px">
+                </div>
+            </div>
+        </div>
+
+        <div id="projects" class="tabcontent">
+            <div class="content">
+                <h1 class="title">projects</h1>
+                <div class="mainInfo">
+                    <p>these are the projects i'm working on. there is currently not much here though.</p>
+                </div>
+                <div class="buttonsContainer">
+                    <div class="containerBttn">
+                        <button type="button" class="bttn" onclick="location.href='https://github.com/veeeeeeee00/veeeeeeee00.github.io'">this site</button>
+                    </div>
+                    <div class="bttnInfo">
+                        <p>website you're currently on.</p>
+                    </div>
+                    <div class="containerBttn">
+                        <button type="button" class="bttn" onclick="location.href='https://github.com/veeeeeeee00/vmware-discordrpc'">vmware-rpc</button>
+                    </div>
+                    <div class="bttnInfo">
+                        <p>a discord rich presence for vmware written in python.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="cats" class="tabcontent">
+
+            <body>
+                <div class="content">
+                    <h1 class="title">
+                        please wait while i try to fix mobile view...
+                    </h1>
+                </div>
+        </div>
+    </div>
+    <div class="pronoun-logo">
+        <input type="image" src="/media/ppage.svg" alt="pronounsPage" height="30" width="30" onclick="location.href='https://en.pronouns.page/@eveee00'">
+    </div>
+    <footer class="disclaimer" id="footer">
+        <input class="noteMS" type="image" height="30" width="30" src="/media/music.png" name="B1" onclick="randomlink()">
+        <span class="music-note"></span> If you see this, the randomizer is broken. refresh the page!
+    </footer>
+    </body>
+
+</html>
