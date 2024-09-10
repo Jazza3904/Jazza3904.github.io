@@ -1,0 +1,176 @@
+/* General styles */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(39, 39, 39);
+    font-family: 'Odibee Sans', monospace;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.title, .titlesubtext, .mainInfo, .discordInfo, .bttnInfo {
+    color: rgb(255, 255, 255);
+}
+
+.title {
+    margin-bottom: 1px;
+}
+
+.titlesubtext {
+    font-size: small;
+    margin-top: 1px;
+}
+
+.mainInfo {
+    font-size: xx-large;
+    margin-top: 1px;
+}
+
+.buttonsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.containerBttn {
+    margin: 5px 0;
+}
+
+.bttn {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 130px;
+    height: 40px;
+    font-family: 'Odibee Sans', monospace;
+}
+
+.bttn:hover {
+    background-color: #555555;
+    color: white;
+}
+
+.disclaimer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-logo {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border: 3px transparent #ffffff;
+    padding: 20px;
+}
+
+.noteMS {
+    margin-right: 10px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.music-note {
+    margin-right: 5px;
+}
+
+
+.tab {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    font-family: 'Odibee Sans', monospace;
+}
+
+
+.tab button {
+    background-color: transparent;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 20px;
+    transition: 0.3s;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: 'Odibee Sans', monospace;
+}
+
+
+.tab button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+.tab button.active {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+.tabcontent {
+    display: none;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    margin-top: 100px;
+    backdrop-filter: blur(10px);
+}
+
+.bttnInfo {
+    color: rgb(255, 255, 255);
+    font-size: small;
+    margin-top: 1px;
+}
+
+.cat-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.cat-container {
+    text-align: center;
+}
+
+.cat-image {
+    width: 300px;
+    height: 300px;
+    border: 5px solid white;
+}
+
+.cat-name {
+    margin-top: 10px;
+    font-family: 'Odibee Sans', monospace;
+    font-size: 20px;
+    color: #ffffff;
+}
