@@ -1,0 +1,7 @@
+<input class="noteMS" type="image" height="30" width="30" src="/media/music.png" name="B1" onclick="randomlink()">
+        <span class="music-note"></span>
+<div class="top-logo">
+        <input type="image" src="/media/ppage.svg" alt="pronounsPage" height="40" width="40" onclick="window.open('https://en.pronouns.page/@Icey67', '_blank')">
+</div>
+
+<input class="noteMS" type="image" height="30" width="30" src="/media/music.png" name="B1" onclick="randomlink()">

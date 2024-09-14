@@ -1,17 +1,23 @@
 /* General styles */
 html, body {
     height: 100%;
-    margin: 0;
 }
 
-.mainlogo img {
-    position: absolute;
-    top: 0px;
-    left: 25px;
-    width: 200px;
-    height: auto;
-    z-index: 1000;
-    background-color: rgba(0, 0, 0, 0.3);
+p {
+        position: absolute;
+        color:white;
+        font-size: 25px;
+        top: 5%;
+        width: display;
+        word-wrap: break-word;
+}
+
+h1 {
+        position: absolute;
+        color: white;
+        font-size: 30px;
+        left: 50%;
+        transform: translateX(-50%);
 }
 
 body {
@@ -23,6 +29,19 @@ body {
     display: flex;
     flex-direction: column;
     background-attachment: fixed;
+}
+
+.mainlogo img {
+    position: absolute;
+    top: 0px;
+    left: 25px;
+    width: 200px;
+    height: auto;
+    z-index: 1000;
+}
+
+text {
+    color: white;
 }
 
 .content {
@@ -83,27 +102,23 @@ body {
 }
 
 .disclaimer {
-    background: #333;
-    color: white;
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 25px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    color: #ffffff;
     text-align: center;
-    padding: 1em 0;
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: center;
-    display: flex;
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
-    padding: 10px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
-    z-index: 1000;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: 10px;
-    width: auto;
-    font-size: 25px;
+    width: 1825px;
 }
 
 .top-logo {
@@ -114,12 +129,6 @@ body {
     padding: 20px;
 }
 
-.githublogo {
-    position: absolute;
-    right: 10px;
-    border: 3px transparent #ffffff;
-}
-
 .noteMS {
     margin-right: 10px;
     position: absolute;
@@ -128,7 +137,6 @@ body {
 }
 
 .music-note {
-    margin-top: -5px;
     margin-right: 5px;
 }
 

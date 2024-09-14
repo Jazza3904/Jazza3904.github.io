@@ -6,7 +6,10 @@
 <script src="scripts.js"></script>
 
 <head>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" type="image" href="/media/i67websiteicon.ico">
 </head>
 <title>
     Icey's page 🧊
@@ -16,7 +19,7 @@
     <div class="content">
         <!-- Logo -->
         <div class="mainlogo">
-            <input type="image" src="/media/IceyBanner.png" alt="mainlogo">
+            <img id="logo" src="/media/IceyBanner.png" alt="mainlogo" />
         </div>
     
         <!-- Tab links. -->
@@ -24,39 +27,40 @@
             <button class="tablinks" onclick="openTab(event, 'info')">info</button>
             <button class="tablinks" onclick="openTab(event, 'links')">links</button>
             <button class="tablinks" onclick="openTab(event, 'projects')">projects</button>
-            <button class="tablinks" onclick="openTab(event, 'cats')">cats</button>
+            <button class="tablinks" onclick="openTab(event, 'cool things')">cool things</button>
         </div>
 
         <!-- Tab content -->
+        <!-- Info tab -->
         <div id="info" class="tabcontent">
             <h1 class="title">Icey's page</h1>
             <div class="mainInfo">
-                <p>heya 👋! i'm evy, you can also call me max. i'm a nonbinary person that is interested in computers 'n stuff.</p>
-                <p>there is currently not much here, but i hope that as i gain coding experience, i'll add stuff.</p>
-                <p>this is my little corner of the web.</p>
+                <p>N🧊 to see you here! 👋 I am Icey67, you can also call me Icey.</p>
+                <p>This website was forked from eveee00's code, so they're pretty much the same,</p>
+                <p>except for that this has my brand on it.</p>
+                <p>This is also my little corner of the internet, i guess.</p>
             </div>
         </div>
 
+        <!-- links tab -->
         <div id="links" class="tabcontent">
             <div class="mainInfo">
                 socials:
             </div>
             <div class="buttonsContainer">
                 <div class="containerBttn">
-                    <button type="button" class="bttn" onclick="location.href='https://www.youtube.com/@Max373-1.0'">my youtube</button>
+                    <button type="button" class="bttn" onclick="window.open('https://www.youtube.com/@icey6719', '_blank')">my youtube</button>
                 </div>
                 <div class="containerBttn">
-                    <button type="button" class="bttn" onclick="location.href='https://twitter.com/eveeeeee00'">my twitter</button>
+                    <button type="button" class="bttn" onclick="window.open('https://www.twitch.tv/icey_67', '_blank')">my twitch</button>
                 </div>
                 <div class="containerBttn">
-                    <button type="button" class="bttn" onclick="location.href='https://blahaj.zone/@eveee'">fediverse!</button>
-                </div>
-                <div class="containerBttn">
-                    <img class="center-image" src="https://lanyard.cnrad.dev/api/675299056070688789" alt="Discord Status" width="350px">
+                    <img class="center-image" src="https://lanyard.cnrad.dev/api/469059297033191425" alt="Discord Status" width="350px">
                 </div>
             </div>
         </div>
 
+        <!-- projects tab -->
         <div id="projects" class="tabcontent">
             <div class="content">
                 <h1 class="title">projects</h1>
@@ -65,36 +69,37 @@
                 </div>
                 <div class="buttonsContainer">
                     <div class="containerBttn">
-                        <button type="button" class="bttn" onclick="location.href='https://github.com/veeeeeeee00/veeeeeeee00.github.io'">this site</button>
+                        <button type="button" class="bttn" onclick="window.open('https://www.github.com/icey67/icey67.github.io', '_blank')">this site</button>
                     </div>
                     <div class="bttnInfo">
                         <p>website you're currently on.</p>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- cool things tab -->
+        <div id="cool things" class="tabcontent">
+            <div class="cool things">
+                <h1 class="title">cool things</h1>
+                <div class="mainInfo">
+                    <p>a good friend of mine basically made this website</p>
+                </div>
+                <div class="buttonsContainer">
                     <div class="containerBttn">
-                        <button type="button" class="bttn" onclick="location.href='https://github.com/veeeeeeee00/vmware-discordrpc'">vmware-rpc</button>
+                        <button type="button" class="bttn" onclick="window.open('https://eveee00.github.io', '_blank')">his site</button>
                     </div>
                     <div class="bttnInfo">
-                        <p>a discord rich presence for vmware written in python.</p>
+                        <p>the original website I copied from</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="cats" class="tabcontent">
-
-            <body>
-                <div class="content">
-                    <h1 class="title">
-                        please wait while i try to fix mobile view...
-                    </h1>
-                </div>
-        </div>
-    </div>
-    <div class="pronoun-logo">
-        <input type="image" src="/media/ppage.svg" alt="pronounsPage" height="30" width="30" onclick="location.href='https://en.pronouns.page/@eveee00'">
     </div>
     <footer class="disclaimer" id="footer">
-        <input class="noteMS" type="image" height="30" width="30" src="/media/music.png" name="B1" onclick="randomlink()">
-        <span class="music-note"></span> If you see this, the randomizer is broken. refresh the page!
+        <div class="githublogo">
+            <input type="image" src="/media/github-mark-white.svg" alt="githubLogo" height="30" width="30" onclick="window.open('https://www.github.com/icey67', '_blank')">
+        </div>If you see this, randomizer is broken
     </footer>
     </body>
 
