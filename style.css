@@ -1,4 +1,11 @@
 /* General styles */
+@media screen and (max-width: 768px) {
+    .disclaimer {
+        position: sticky; /* Sticky instead of fixed */
+        bottom: 0;
+    }
+}
+
 html, body {
     height: 100%;
     margin: 0;
@@ -39,17 +46,17 @@ body {
 }
 
 .title {
-    font-size: 50px;
+    font-size: 45px;
     margin-bottom: 1px;
 }
 
 .titlesubtext {
-    font-size: 50px;
-    margin-top: 1px;
+    font-size: 40px;
+    margin-top: 5px;
 }
 
 .mainInfo {
-    font-size: 40px;
+    font-size: 32px;
     margin-top: 1px;
 }
 
@@ -74,6 +81,12 @@ body {
     height: 40px;
     font-family: 'Odibee Sans', monospace;
     font-size: 22px;
+}
+
+.a:link {
+    color: #00aaaa;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .bttn:hover {
@@ -106,7 +119,7 @@ body {
     font-size: 25px;
 }
 
-.top-logo {
+.top-logo {     /*what is this for again? -i67*/
     position: absolute;
     top: 0px;
     right: 0px;
@@ -120,14 +133,14 @@ body {
     border: 3px transparent #ffffff;
 }
 
-.noteMS {
+.noteMS {   /*is this even still necessary? -i67*/
     margin-right: 10px;
     position: absolute;
     bottom: 10px;
     left: 10px;
 }
 
-.music-note {
+.music-note {   /*i'm not sure myself -i67*/
     margin-top: -5px;
     margin-right: 5px;
 }
@@ -186,5 +199,69 @@ body {
 .bttnInfo {
     color: rgb(255, 255, 255);
     font-size: 30px;
-    margin-top: 1px;
 }
+
+.hamburger {
+    display: none;
+}
+/*Media call for phones and shit*/
+@media screen and (max-width: 900px) {
+    /*Hide tabs*/
+    .tab {
+        display: none;
+        position: fixed; /* Fix it to the screen */
+        top: 0%;
+        left: 50%;  /* chatgpt said 0% would work, it did not, jank fix: 50% left */
+        width: 100vw; /* Fullscreen width */
+        height: 100vh; /* Fullscreen height */
+        background-color: rgba(0, 0, 0, 0.9); /* Dark background with transparency */
+        z-index: 1000; /* Make sure it appears on top */
+        flex-direction: column; /* Stack the tabs vertically */
+        justify-content: center; /* Center the tabs vertically */
+        align-items: center; /* Center the tabs horizontally */
+        margin: 0;
+        padding: 0;
+    }
+    
+    /*hamburger*/
+    .hamburger {
+        display: block;
+        position: fixed;
+        cursor: pointer;
+        font-size: 30px;
+        color: cyan;
+        text-align: right;
+        padding: 10px;
+        z-index: 1200;
+        top: 5px;
+        right: 5px;
+    }
+
+    /* Show tabs when clicked */
+    .tab.active {
+        display: flex;
+    }
+
+    .tab button {
+        padding: 20px;
+        font-size: 24px;
+        color: white;
+        background: none;
+        border: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    .tab button:hover {
+        background-color: rgba(255,255,255,0.2)
+    }
+}
+
+/* literally made this myself i am stocked that worked */
+@media screen and (max-height: 855px) {
+    .disclaimer {
+    position: sticky;
+    bottom: 0;
+    }
+}
+/* and with that mobile view is pretty much optimized, i think */

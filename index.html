@@ -23,14 +23,24 @@
         </div>
     
         <!-- Tab links. -->
+        <div class="hamburger" onclick="toggleMenu()">☰</div> <!-- hamburger menu for smol width -->
         <div class="tab">
             <button class="tablinks" onclick="openTab(event, 'info')">info</button>
             <button class="tablinks" onclick="openTab(event, 'links')">links</button>
             <button class="tablinks" onclick="openTab(event, 'projects')">projects</button>
+            <button class="tablinks" onclick="openTab(event, 'specs')">specs</button>
             <button class="tablinks" onclick="openTab(event, 'cool things')">cool things</button>
         </div>
-
+        
+        <script>
+            function toggleMenu() {
+                var tabs = document.querySelector('.tab');
+                tabs.classList.toggle('active'); // Toggle the active class to show/hide tabs
+            }
+        </script>
+        
         <!-- Tab content -->
+        
         <!-- Info tab -->
         <div id="info" class="tabcontent">
             <h1 class="title">Icey's page</h1>
@@ -74,6 +84,22 @@
                     <div class="bttnInfo">
                         <p>website you're currently on.</p>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- specs tab -->
+        <div id="specs" class="tabcontent">
+            <div>
+                <h1 class="title">current pc specs</h1>
+                <div class="titlesubtext">this is my current pc specs, it ain't the best but it gets the work done, i guess...</div>
+                <div class="mainInfo">
+                    <p>CPU: AMD Phenom II X6 1090T</p>
+                    <p>GPU: NVIDIA GeForce GTX 770</p>
+                    <p>RAM: some weird knock off brand from <a type="link" onclick="window.open('https://www.amazon.com', '_blank')">amazon</a>, 16GB</p>
+                    <p>MOBO: ASRock M5A87</p>
+                    <p>STORAGE: SanDisk SSD PLUS 1TB, HITACHI 512GB, Some DVD Drive: currently unplugged</p>
+                    <p>PSU: Enermax Revolution X't 530W</p>
                 </div>
             </div>
         </div>

@@ -22,6 +22,15 @@ h1 {
         transform: translateX(-50%);
 }
 
+@media screen and (max-width: 1800px) {
+    h1 {
+        top: 15%;
+    }
+    p {
+        bottom: 0%;
+    }
+}
+
 body {
     background-image: url("/media/I67Background.png");
     background-repeat: no-repeat;
