@@ -40,6 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
         { text: "DISTRACTION!", url:"https://youtu.be/XP_ZivuN6iY?si=sgEJOPF-iHD0C_Vf" },
         { text: "he turned himself into an angry sausage", url:"https://youtu.be/qaUSuh1ICJw?si=HkLq7H2Y1tJFVufn"},
         {text:"i67's update to note 4: nevermind i fixed it."},
+        {text:"i67's second update to note 4: audio no worky in mobile ;-;"},
         {text:"i67's note 5: i think mobile view is broken"}
     ];
 
