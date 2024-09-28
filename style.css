@@ -3,6 +3,7 @@
     .disclaimer {
         position: sticky; /* Sticky instead of fixed */
         bottom: 0;
+        margin-right: 10px;
     }
 }
 
@@ -133,6 +134,19 @@ body {
     border: 3px transparent #ffffff;
 }
 
+@media screen and (max-width: 768px) {
+    .githublogo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: sticky;
+        bottom: 5px;
+        left: 10px;
+        padding: 10px;
+        margin-right: auto;
+        margin-left: 0;
+    }
+}
 .noteMS {   /*is this even still necessary? -i67*/
     margin-right: 10px;
     position: absolute;
