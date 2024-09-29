@@ -120,14 +120,7 @@ body {
     font-size: 25px;
 }
 
-.top-logo {     /*what is this for again? -i67*/
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    border: 3px transparent #ffffff;
-    padding: 20px;
-}
-
+/* half of the code fixing the logo (on mobile) was written by chatgpt. tbh, i suck at webdeveloping. -ev00 */
 .githublogo {
     position: absolute;
     right: 10px;
@@ -159,19 +152,7 @@ body {
         padding-right: 50px;  /* Ensure space for the logo */
     }
 }
-.noteMS {   /*is this even still necessary? -i67*/
-    margin-right: 10px;
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-}
-
-.music-note {   /*i'm not sure myself -i67*/
-    margin-top: -5px;
-    margin-right: 5px;
-}
-
-
+/* is this even still necessary? -i67; remov ing the code didn't fuck anything up, so no.*/
 .tab {
     position: fixed;
     top: 20px;
@@ -290,4 +271,4 @@ body {
     bottom: 0;
     }
 }
-/* and with that mobile view is pretty much optimized, i think */
+/* and with that mobile view is pretty much optimized, i think; lmao */
