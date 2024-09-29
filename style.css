@@ -132,19 +132,31 @@ body {
     position: absolute;
     right: 10px;
     border: 3px transparent #ffffff;
+    width: 40px;  /* Adjust the size as needed */
+    height: auto;
+    z-index: 1001;  /* Keep the logo above other content */
+    margin-left: 10px;
 }
 
 @media screen and (max-width: 768px) {
     .githublogo {
         display: flex;
-        justify-content: center;
+        flex-direction: row;
+        position: absolute;
+        justify-content: space-between;
         align-items: center;
-        position: sticky;
-        bottom: 5px;
-        left: 10px;
-        padding: 10px;
-        margin-right: auto;
-        margin-left: 0;
+        right: 10px;
+        width: 30px;  /* Adjust size for mobile */
+        height: auto;
+        padding-bottom: auto;
+        z-index: 1001;
+    }
+    .disclaimer {
+        display: flex;
+        flex-direction: row;  /* Ensure text and logo are side by side */
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 50px;  /* Ensure space for the logo */
     }
 }
 .noteMS {   /*is this even still necessary? -i67*/
