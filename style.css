@@ -3,6 +3,7 @@
     .disclaimer {
         position: sticky; /* Sticky instead of fixed */
         bottom: 0;
+        margin-right: 10px;
     }
 }
 
@@ -119,33 +120,39 @@ body {
     font-size: 25px;
 }
 
-.top-logo {     /*what is this for again? -i67*/
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    border: 3px transparent #ffffff;
-    padding: 20px;
-}
-
+/* half of the code fixing the logo (on mobile) was written by chatgpt. tbh, i suck at webdeveloping. -ev00 */
 .githublogo {
     position: absolute;
     right: 10px;
     border: 3px transparent #ffffff;
+    width: 40px;  /* Adjust the size as needed */
+    height: auto;
+    z-index: 1001;  /* Keep the logo above other content */
+    margin-left: 10px;
 }
 
-.noteMS {   /*is this even still necessary? -i67*/
-    margin-right: 10px;
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
+@media screen and (max-width: 768px) {
+    .githublogo {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        justify-content: space-between;
+        align-items: center;
+        right: 10px;
+        width: 30px;  /* Adjust size for mobile */
+        height: auto;
+        padding-bottom: auto;
+        z-index: 1001;
+    }
+    .disclaimer {
+        display: flex;
+        flex-direction: row;  /* Ensure text and logo are side by side */
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 50px;  /* Ensure space for the logo */
+    }
 }
-
-.music-note {   /*i'm not sure myself -i67*/
-    margin-top: -5px;
-    margin-right: 5px;
-}
-
-
+/* is this even still necessary? -i67; remov ing the code didn't fuck anything up, so no.*/
 .tab {
     position: fixed;
     top: 20px;
@@ -264,4 +271,4 @@ body {
     bottom: 0;
     }
 }
-/* and with that mobile view is pretty much optimized, i think */
+/* and with that mobile view is pretty much optimized, i think; lmao */
