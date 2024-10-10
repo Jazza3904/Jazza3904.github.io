@@ -1,12 +1,4 @@
 /* General styles */
-@media screen and (max-width: 768px) {
-    .disclaimer {
-        position: sticky; /* Sticky instead of fixed */
-        bottom: 0;
-        margin-right: 10px;
-    }
-}
-
 html, body {
     height: 100%;
     margin: 0;
@@ -42,7 +34,7 @@ body {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-.title, .titlesubtext, .mainInfo, .discordInfo, .bttnInfo {
+.title, .titlesubtext, .mainInfo, .discordInfo, .bttnInfo, .smalltitle {
     color: rgb(255, 255, 255);
 }
 
@@ -52,12 +44,12 @@ body {
 }
 
 .titlesubtext {
-    font-size: 40px;
+    font-size: 35px;
     margin-top: 5px;
 }
 
 .mainInfo {
-    font-size: 32px;
+    font-size: 27px;
     margin-top: 1px;
 }
 
@@ -72,6 +64,11 @@ body {
     margin: 5px 0;
 }
 
+.smalltitle {
+    font-size: 40px;
+    font-weight: normal;
+}
+
 .bttn {
     background-color: #00aaaa;
     color: #00ffff;
@@ -79,36 +76,50 @@ body {
     padding: 5px 15px;
     cursor: pointer;
     width: 130px;
-    height: 40px;
+    height: 50px;
     font-family: 'Odibee Sans', monospace;
-    font-size: 22px;
+    font-size: 25px;
 }
 
-.a:link {
-    color: #00aaaa;
-    text-decoration: underline;
+.bttnwide {
+    background-color: #00aaaa;
+    color: #00ffff;
+    border: 2px solid #00ffff;
+    padding: 5px 15px;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    font-family: 'Odibee Sans', monospace;
+    font-size: 25px;
+}
+
+.bttnwide:hover {
+    background-color: cyan;
+    color: white;
+    border: 2px solid white;
+} /* copilot wrote this by itself, i am stoked -i67 */
+
+.a {
+    color: white;
     cursor: pointer;
 }
 
 .bttn:hover {
-    background-color: #555555;
+    background-color: cyan;
     color: white;
-    border: #555555;
+    border: 2px solid white;
 }
 
 .disclaimer {
-    background: #333;
+    background: rgba(255, 255, 255, 0.2);
     color: white;
     text-align: center;
-    padding: 1em 0;
+    padding: 10px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    display: flex;
-    background: rgba(255, 255, 255, 0.2);
+    justify-content: space-between;
     backdrop-filter: blur(10px);
     border-radius: 10px;
-    padding: 10px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
     z-index: 1000;
     position: fixed;
@@ -117,12 +128,23 @@ body {
     right: 0;
     margin: 10px;
     width: auto;
+    height: auto;
     font-size: 25px;
 }
 
-/* half of the code fixing the logo (on mobile) was written by chatgpt. tbh, i suck at webdeveloping. -ev00 */
+.message-container {
+    flex: 1;
+    overflow-y: auto; /* Enable vertical scrolling */
+    max-height: 100px; /* Set a fixed height for the container */
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/* half of the code fixing the logo (on mobile) was written by chatgpt. tbh, i suck at webdeveloping. -ev00; relatable. -i67*/
 .githublogo {
     position: absolute;
+    justify-content: space-between;
+    align-items: center;
     right: 10px;
     border: 3px transparent #ffffff;
     width: 40px;  /* Adjust the size as needed */
@@ -152,7 +174,7 @@ body {
         padding-right: 50px;  /* Ensure space for the logo */
     }
 }
-/* is this even still necessary? -i67; remov ing the code didn't fuck anything up, so no.*/
+/* is this even still necessary? -i67; removing the code didn't fuck anything up, so no.*/
 .tab {
     position: fixed;
     top: 20px;
@@ -167,7 +189,6 @@ body {
     z-index: 1000;
     font-family: 'Odibee Sans', monospace;
 }
-
 
 .tab button {
     background-color: transparent;
@@ -200,6 +221,7 @@ body {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 20px;
     margin-top: 100px;
+    margin-bottom: 60px;
     backdrop-filter: blur(10px);
 }
 
@@ -267,8 +289,9 @@ body {
 /* literally made this myself i am stocked that worked */
 @media screen and (max-height: 855px) {
     .disclaimer {
-    position: sticky;
-    bottom: 0;
+        position: sticky;
+        bottom: 0;
+        overflow:auto;
     }
 }
 /* and with that mobile view is pretty much optimized, i think; lmao */
