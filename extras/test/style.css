@@ -20,7 +20,7 @@ body, .bttn, .bttnwide, .title, .titlesubtext, .mainInfo, .discordInfo, .bttnInf
 }
 
 .mainlogo img {
-    position: fixed;
+    position:fixed;
     top: 5px;
     left: 25px;
     width: 300px;
@@ -148,22 +148,6 @@ body {
     top: 10;
     right: 15px;
     height: auto;
-}
-
-.bttn {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 10px;
-    font-size: 30px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.bttn:hover {
-    background-color: rgba(0, 0, 0, 0.7);
 }
 
 @media screen and (max-width: 768px) {
