@@ -1,0 +1,25 @@
+.mainlogo img {
+    position:static;
+    top: 0;
+    left: 25px;
+    width: 200px;
+}
+
+body {
+    background-image: url("/media/I67Background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content {
+    background-color: rgba(0,0,0,0.2);
+}
+
+.disclaimer {
+    position: fixed;
+    bottom: 0;
+}
+
+.message-container {
+    color: white;
+}

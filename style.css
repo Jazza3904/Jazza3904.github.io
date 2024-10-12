@@ -128,16 +128,22 @@ body {
     right: 0;
     margin: 10px;
     width: auto;
-    height: auto;
+    height: 30px;
+    min-height: 30px;
     font-size: 25px;
+    overflow: hidden;
 }
 
 .message-container {
     flex: 1;
     overflow-y: auto; /* Enable vertical scrolling */
-    max-height: 100px; /* Set a fixed height for the container */
+    align-items: start;
+    max-height: 30px; /* Set a fixed height for the container */
     padding-left: 50px;
+    padding-top: 10px;
     padding-right: 50px;
+    padding-bottom: 10px;
+    overflow-anchor:none; /* Prevents the container from snapping to the bottom */
 }
 
 /* half of the code fixing the logo (on mobile) was written by chatgpt. tbh, i suck at webdeveloping. -ev00; relatable. -i67*/
@@ -172,6 +178,9 @@ body {
         justify-content: space-between;
         align-items: center;
         padding-right: 50px;  /* Ensure space for the logo */
+    }
+    .message-container {
+        max-height: 80px;
     }
 }
 /* is this even still necessary? -i67; removing the code didn't fuck anything up, so no.*/
@@ -290,8 +299,8 @@ body {
 @media screen and (max-height: 855px) {
     .disclaimer {
         position: sticky;
-        bottom: 0;
-        overflow:auto;
+        overflow:hidden;
+        bottom: 10px;
     }
 }
 /* and with that mobile view is pretty much optimized, i think; lmao */
