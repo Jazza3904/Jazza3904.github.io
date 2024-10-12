@@ -11,36 +11,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
     <link rel="icon" type="image" href="/media/i67websiteicon.ico">
 </head>
-<title>
-    Icey's page 🧊
-</title>
-
 <body>
+    <!-- Tab links. -->
+    <div class="hamburger" onclick="toggleMenu()">☰</div> <!-- hamburger menu for smol width -->
+    <div class="tab">
+        <button class="tablinks" data-city="info" onclick="openTab(event, 'info')">info</button>
+        <button class="tablinks" data-city="links" onclick="openTab(event, 'links')">links</button>
+        <button class="tablinks" data-city="projects" onclick="openTab(event, 'projects')">projects</button>
+        <button class="tablinks" data-city="specs" onclick="openTab(event, 'specs')">specs</button>
+        <button class="tablinks" data-city="cool things" onclick="openTab(event, 'cool things')">cool things</button>
+    </div>
+    <script>
+        function toggleMenu() {
+            var tabs = document.querySelector('.tab');
+            tabs.classList.toggle('active'); // Toggle the active class to show/hide tabs
+        }
+    </script>
     <div class="content">
-        <!-- Logo -->
         <div class="mainlogo">
             <img id="logo" src="/media/IceyBanner.png" alt="mainlogo" />
         </div>
-    
-        <!-- Tab links. -->
-        <div class="hamburger" onclick="toggleMenu()">☰</div> <!-- hamburger menu for smol width -->
-        <div class="tab">
-            <button class="tablinks" data-city="info" onclick="openTab(event, 'info')">info</button>
-            <button class="tablinks" data-city="links" onclick="openTab(event, 'links')">links</button>
-            <button class="tablinks" data-city="projects" onclick="openTab(event, 'projects')">projects</button>
-            <button class="tablinks" data-city="specs" onclick="openTab(event, 'specs')">specs</button>
-            <button class="tablinks" data-city="cool things" onclick="openTab(event, 'cool things')">cool things</button>
-        </div>
-        
-        <script>
-            function toggleMenu() {
-                var tabs = document.querySelector('.tab');
-                tabs.classList.toggle('active'); // Toggle the active class to show/hide tabs
-            }
-        </script>
         
         <!-- Tab content -->
-        
         <!-- Info tab -->
         <div id="info" class="tabcontent">
             <h1 class="title">Icey's page</h1>
@@ -130,7 +122,7 @@
                         <p>the original website I copied from</p>
                     </div>
                     <div class="containerBttn">
-                        <button type="button" class="bttnwide" onclick="window.open('https://eveee00.github.io/webPOST', '_blank')">eveee00's webPOST</button>
+                        <button type="button" class="bttn" onclick="window.open('https://eveee00.github.io/webPOST', '_blank')">eveee00's webPOST</button>
                     </div>
                     <div class="bttnInfo">
                         <p>the original webPOST</p>
@@ -139,14 +131,13 @@
             </div>
         </div>
     </div>
+    
     <footer class="disclaimer" id="footer">
-        <div class="githublogo">
-            <input type="image" src="/media/github-mark-white.svg" alt="githubLogo" height="30" width="30" title="Visit my GitHub" onclick="window.open('https://www.github.com/icey67', '_blank')">
-        </div>
         <div class="message-container">
             If you see this, randomizer is broken
         </div>
+        <div class="githublogo">
+            <input type="image" src="/media/github-mark-white.svg" alt="githubLogo" height="30" width="30" title="Visit my GitHub" onclick="window.open('https://www.github.com/icey67', '_blank')">
+        </div>
     </footer>
-    </body>
-
-</html>
+</body>

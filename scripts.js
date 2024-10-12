@@ -152,14 +152,6 @@ document.addEventListener('DOMContentLoaded', function() {
     updateFooterMessage(Math.floor(Math.random() * messages.length));
 });
 
-var randomlinks = [];
-randomlinks[0] = ""; //gotta add my own links here
-
-function randomlink() {
-    console.log("randomizing link for music...")
-    window.open(randomlinks[Math.floor(Math.random() * randomlinks.length)]);
-}
-
 console.error("you nosy little shit, now close the console! >:3")
 console.error("unless you contribute to coding and need to debug some stuff")
 

@@ -12,19 +12,132 @@
     <link rel="icon" type="image" href="/media/i67websiteicon.ico">
 </head>
 <body>
+    <!-- Tab links. -->
+    <div class="hamburger" onclick="toggleMenu()">☰</div> <!-- hamburger menu for smol width -->
+    <div class="tab">
+        <button class="tablinks" data-city="info" onclick="openTab(event, 'info')">info</button>
+        <button class="tablinks" data-city="links" onclick="openTab(event, 'links')">links</button>
+        <button class="tablinks" data-city="projects" onclick="openTab(event, 'projects')">projects</button>
+        <button class="tablinks" data-city="specs" onclick="openTab(event, 'specs')">specs</button>
+        <button class="tablinks" data-city="cool things" onclick="openTab(event, 'cool things')">cool things</button>
+    </div>
+    <script>
+        function toggleMenu() {
+            var tabs = document.querySelector('.tab');
+            tabs.classList.toggle('active'); // Toggle the active class to show/hide tabs
+        }
+    </script>
     <div class="content">
-        <!-- Logo -->
         <div class="mainlogo">
             <img id="logo" src="/media/IceyBanner.png" alt="mainlogo" />
+        </div>
+        
+        <!-- Tab content -->
+        <!-- Info tab -->
+        <div id="info" class="tabcontent">
+            <h1 class="title">Icey's page</h1>
+            <div class="mainInfo">
+                <p>N🧊 to see you here! 👋 I am Icey67, you can also call me Icey.</p>
+                <p>This website was forked from eveee00's code, so they're pretty much the same,</p>
+                <p>except for that this has my brand on it.</p>
+                <p>This is also my little corner of the internet, i guess.</p>
+            </div>
+        </div>
+
+        <!-- links tab -->
+        <div id="links" class="tabcontent">
+            <div class="titlesubtext">
+                my socials:
+            </div>
+            <div class="buttonsContainer">
+                <div class="containerBttn">
+                    <button type="button" class="bttn" onclick="window.open('https://www.youtube.com/@icey6719', '_blank')">my youtube</button>
+                </div>
+                <div class="containerBttn">
+                    <button type="button" class="bttn" onclick="window.open('https://www.twitch.tv/icey_67', '_blank')">my twitch</button>
+                </div>
+                <div class="containerBttn">
+                    <img class="center-image" src="https://lanyard.cnrad.dev/api/469059297033191425" alt="Discord Status" width="350px">
+                </div>
+            </div>
+        </div>
+
+        <!-- projects tab -->
+        <div id="projects" class="tabcontent">
+            <div>
+                <h1 class="title">projects</h1>
+                <div class="mainInfo">
+                    <p>these are the projects i'm working on. there is currently not much here though.</p>
+                </div>
+                <div class="buttonsContainer">
+                    <div class="containerBttn">
+                        <button type="button" class="bttn" onclick="window.open('https://www.github.com/icey67/icey67.github.io', '_blank')">this site</button>
+                    </div>
+                    <div class="bttnInfo">
+                        <p>website you're currently on.</p>
+                    </div>
+                    <div class="containerBttn">
+                        <button type="button" class="bttn" onclick="window.open('https://www.github.com/icey67/icey67.github.io/webPOST', '_blank')">ISB on web</button>
+                    </div>
+                    <div class="bttnInfo">
+                        <p>IceySystemsBIOS on the web, another thing i copied from eveee00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- specs tab -->
+        <div id="specs" class="tabcontent">
+            <div>
+                <h1 class="title">current pc specs</h1>
+                <div class="titlesubtext">this is my current pc specs, it ain't the best but it gets the work done, i guess...</div>
+                <div class="mainInfo">
+                    <p>CPU: AMD Phenom II X6 1090T</p>
+                    <p>GPU: NVIDIA GeForce GTX 770</p>
+                    <p>RAM: some weird knock off brand from <a class="a" type="link" onclick="window.open('https://www.amazon.com', '_blank')">amazon</a>, 16GB at 1333MHz</p>
+                    <p>MOBO: ASRock M5A87</p>
+                    <p>STORAGE: SanDisk SSD PLUS 1TB, Hitachi HDS721050CLA362 500GB, Some DVD Drive: currently unplugged</p>
+                    <p>PSU: Enermax Revolution X't 530W</p>
+                    <p>OS: AtlasOS v0.4.0</p>
+                </div>
+                <h2 class="smalltitle">DISCLAIMER!</h2>
+                <div class="mainInfo">
+                    <p>I highly discourage anybody from building a similar build since it is basically ancient and trash</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- cool things tab -->
+        <div id="cool things" class="tabcontent">
+            <div class="cool things">
+                <h1 class="title">cool things</h1>
+                <div class="mainInfo">
+                    <p>a good friend of mine basically made this website</p>
+                </div>
+                <div class="buttonsContainer">
+                    <div class="containerBttn">
+                        <button type="button" class="bttn" onclick="window.open('https://eveee00.github.io', '_blank')">his site</button>
+                    </div>
+                    <div class="bttnInfo">
+                        <p>the original website I copied from</p>
+                    </div>
+                    <div class="containerBttn">
+                        <button type="button" class="bttnwide" onclick="window.open('https://eveee00.github.io/webPOST', '_blank')">eveee00's webPOST</button>
+                    </div>
+                    <div class="bttnInfo">
+                        <p>the original webPOST</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     
     <footer class="disclaimer" id="footer">
-        <div class="githublogo">
-            <input type="image" src="/media/github-mark-white.svg" alt="githubLogo" height="30" width="30" title="Visit my GitHub" onclick="window.open('https://www.github.com/icey67', '_blank')">
-        </div>
         <div class="message-container">
             If you see this, randomizer is broken
+        </div>
+        <div class="githublogo">
+            <input type="image" src="/media/github-mark-white.svg" alt="githubLogo" height="30" width="30" title="Visit my GitHub" onclick="window.open('https://www.github.com/icey67', '_blank')">
         </div>
     </footer>
 </body>

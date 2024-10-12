@@ -1,27 +1,12 @@
-/* General styles */
 html, body {
     height: 100%;
     margin: 0;
 }
 
-.mainlogo img {
-    position: absolute;
-    top: 0px;
-    left: 25px;
-    width: 200px;
-    height: auto;
-    z-index: 1000;
-}
-
-body {
-    background-image: url("/media/I67Background.png");
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: center;
+/* things that need the font and color applied */
+body, .bttn, .bttnwide, .title, .titlesubtext, .mainInfo, .discordInfo, .bttnInfo, .smalltitle, .tab, .tab button {
     font-family: 'Odibee Sans', monospace;
-    display: flex;
-    flex-direction: column;
-    background-attachment: fixed;
+    color: white;
 }
 
 .content {
@@ -34,164 +19,32 @@ body {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-.title, .titlesubtext, .mainInfo, .discordInfo, .bttnInfo, .smalltitle {
-    color: rgb(255, 255, 255);
+.mainlogo img {
+    position: fixed;
+    top: 5px;
+    left: 25px;
+    width: 300px;
 }
 
-.title {
-    font-size: 45px;
-    margin-bottom: 1px;
-}
-
-.titlesubtext {
-    font-size: 35px;
-    margin-top: 5px;
-}
-
-.mainInfo {
-    font-size: 27px;
-    margin-top: 1px;
-}
-
-.buttonsContainer {
+body {
+    background-image: url("/media/I67Background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
+    overflow-y: auto;
 }
 
-.containerBttn {
-    margin: 5px 0;
-}
-
-.smalltitle {
-    font-size: 40px;
-    font-weight: normal;
-}
-
-.bttn {
-    background-color: #00aaaa;
-    color: #00ffff;
-    border: 2px solid #00ffff;
-    padding: 5px 15px;
-    cursor: pointer;
-    width: 130px;
-    height: 50px;
-    font-family: 'Odibee Sans', monospace;
-    font-size: 25px;
-}
-
-.bttnwide {
-    background-color: #00aaaa;
-    color: #00ffff;
-    border: 2px solid #00ffff;
-    padding: 5px 15px;
-    cursor: pointer;
-    width: 200px;
-    height: 50px;
-    font-family: 'Odibee Sans', monospace;
-    font-size: 25px;
-}
-
-.bttnwide:hover {
-    background-color: cyan;
-    color: white;
-    border: 2px solid white;
-} /* copilot wrote this by itself, i am stoked -i67 */
-
-.a {
-    color: white;
-    cursor: pointer;
-}
-
-.bttn:hover {
-    background-color: cyan;
-    color: white;
-    border: 2px solid white;
-}
-
-.disclaimer {
-    background: rgba(255, 255, 255, 0.2);
-    color: white;
-    text-align: center;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
-    z-index: 1000;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: 10px;
-    width: auto;
-    height: 30px;
-    min-height: 30px;
-    font-size: 25px;
-    overflow: hidden;
-}
-
-.message-container {
-    flex: 1;
-    overflow-y: auto; /* Enable vertical scrolling */
-    align-items: start;
-    max-height: 30px; /* Set a fixed height for the container */
-    padding-left: 50px;
-    padding-top: 10px;
-    padding-right: 50px;
-    padding-bottom: 10px;
-    overflow-anchor:none; /* Prevents the container from snapping to the bottom */
-}
-
-/* half of the code fixing the logo (on mobile) was written by chatgpt. tbh, i suck at webdeveloping. -ev00; relatable. -i67*/
-.githublogo {
-    position: absolute;
-    justify-content: space-between;
-    align-items: center;
-    right: 10px;
-    border: 3px transparent #ffffff;
-    width: 40px;  /* Adjust the size as needed */
-    height: auto;
-    z-index: 1001;  /* Keep the logo above other content */
-    margin-left: 10px;
-}
-
-@media screen and (max-width: 768px) {
-    .githublogo {
-        display: flex;
-        flex-direction: row;
-        position: absolute;
-        justify-content: space-between;
-        align-items: center;
-        right: 10px;
-        width: 30px;  /* Adjust size for mobile */
-        height: auto;
-        padding-bottom: auto;
-        z-index: 1001;
-    }
-    .disclaimer {
-        display: flex;
-        flex-direction: row;  /* Ensure text and logo are side by side */
-        justify-content: space-between;
-        align-items: center;
-        padding-right: 50px;  /* Ensure space for the logo */
-    }
-    .message-container {
-        max-height: 80px;
-    }
-}
-/* is this even still necessary? -i67; removing the code didn't fuck anything up, so no.*/
 .tab {
     position: fixed;
-    top: 20px;
+    top: 10px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(150px);
     border-radius: 20px;
     padding: 10px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
@@ -215,53 +68,115 @@ body {
 
 
 .tab button:hover {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 
 .tab button.active {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 
 .tabcontent {
     display: none;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     margin-top: 100px;
     margin-bottom: 60px;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(100px);
+}
+
+/* now the font size... AAAAAAAAAAAAAAA */
+.title {
+    font-size: 45px;
+}
+.titlesubtext {
+    font-size: 40px;
+}
+.smalltitle {
+    font-size: 35px;
+}
+.mainInfo {
+    font-size: 30px;
 }
 
 .bttnInfo {
-    color: rgb(255, 255, 255);
     font-size: 30px;
 }
 
 .hamburger {
     display: none;
 }
-/*Media call for phones and shit*/
-@media screen and (max-width: 900px) {
-    /*Hide tabs*/
-    .tab {
-        display: none;
-        position: fixed; /* Fix it to the screen */
-        top: 0%;
-        left: 50%;  /* chatgpt said 0% would work, it did not, jank fix: 50% left */
-        width: 100vw; /* Fullscreen width */
-        height: 100vh; /* Fullscreen height */
-        background-color: rgba(0, 0, 0, 0.9); /* Dark background with transparency */
-        z-index: 1000; /* Make sure it appears on top */
-        flex-direction: column; /* Stack the tabs vertically */
-        justify-content: center; /* Center the tabs vertically */
-        align-items: center; /* Center the tabs horizontally */
-        margin: 0;
-        padding: 0;
+
+.disclaimer {
+    display: flex;
+    background-color: rgba(0,0,0,0.2);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(150px);
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    width: auto;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.message-container {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-family: 'Odibee Sans', monospace;
+    bottom: 0px;
+    font-size: 30px;
+    text-align: center;
+    overflow-y: auto;
+    max-height: 50px;
+    margin-right: 50px;
+}
+
+.githublogo {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 10;
+    right: 15px;
+    height: auto;
+}
+
+.bttn {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.bttn:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+@media screen and (max-width: 768px) {
+    .mainlogo img {
+        width: 150px;
     }
-    
-    /*hamburger*/
+    .message-container {
+        font-size: 20px;
+    }
+    .disclaimer {
+        position: fixed;
+        bottom: 0;
+    }
     .hamburger {
         display: block;
         position: fixed;
@@ -274,8 +189,22 @@ body {
         top: 5px;
         right: 5px;
     }
-
-    /* Show tabs when clicked */
+    .tab {
+        display: none;
+        position: fixed; /* Fix it to the screen */
+        top: 0;
+        left: 50%;  /* chatgpt said 0% would work, it did not, jank fix: 50% left */
+        width: 100vw; /* Fullscreen width */
+        height: 100vh; /* Fullscreen height */
+        background-color: rgba(0, 0, 0, 0.9); /* Dark background with transparency */
+        border-radius: 10px;
+        z-index: 1000; /* Make sure it appears on top */
+        flex-direction: column; /* Stack the tabs vertically */
+        justify-content: center; /* Center the tabs vertically */
+        align-items: center; /* Center the tabs horizontally */
+        margin: 0;
+        padding: 0;
+    }
     .tab.active {
         display: flex;
     }
@@ -294,13 +223,3 @@ body {
         background-color: rgba(255,255,255,0.2)
     }
 }
-
-/* literally made this myself i am stocked that worked */
-@media screen and (max-height: 855px) {
-    .disclaimer {
-        position: sticky;
-        overflow:hidden;
-        bottom: 10px;
-    }
-}
-/* and with that mobile view is pretty much optimized, i think; lmao */

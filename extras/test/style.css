@@ -1,25 +1,209 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* things that need the font and color applied */
+body, .bttn, .bttnwide, .title, .titlesubtext, .mainInfo, .discordInfo, .bttnInfo, .smalltitle, .tab, .tab button {
+    font-family: 'Odibee Sans', monospace;
+    color: white;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
 .mainlogo img {
-    position:static;
-    top: 0;
+    position:fixed;
+    top: 5px;
     left: 25px;
-    width: 200px;
+    width: 300px;
 }
 
 body {
     background-image: url("/media/I67Background.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
 }
 
-.content {
-    background-color: rgba(0,0,0,0.2);
+.tab {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(150px);
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    font-family: 'Odibee Sans', monospace;
+}
+
+.tab button {
+    background-color: transparent;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 20px;
+    transition: 0.3s;
+    border-radius: 10px;
+    font-size: 30px;
+    font-family: 'Odibee Sans', monospace;
+}
+
+
+.tab button:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+.tab button.active {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+.tabcontent {
+    display: none;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    margin-top: 100px;
+    margin-bottom: 60px;
+    backdrop-filter: blur(100px);
+}
+
+/* now the font size... AAAAAAAAAAAAAAA */
+.title {
+    font-size: 45px;
+}
+.titlesubtext {
+    font-size: 40px;
+}
+.smalltitle {
+    font-size: 35px;
+}
+.mainInfo {
+    font-size: 30px;
+}
+
+.bttnInfo {
+    font-size: 30px;
+}
+
+.hamburger {
+    display: none;
 }
 
 .disclaimer {
-    position: fixed;
-    bottom: 0;
+    display: flex;
+    background-color: rgba(0,0,0,0.2);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(150px);
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    width: auto;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
 }
 
 .message-container {
+    display: flex;
+    flex-direction: row;
     color: white;
+    font-family: 'Odibee Sans', monospace;
+    bottom: 0px;
+    font-size: 30px;
+    text-align: center;
+    overflow-y: auto;
+    max-height: 50px;
+    margin-right: 50px;
+}
+
+.githublogo {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 10;
+    right: 15px;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .mainlogo img {
+        width: 150px;
+    }
+    .message-container {
+        font-size: 20px;
+    }
+    .disclaimer {
+        position: fixed;
+        bottom: 0;
+    }
+    .hamburger {
+        display: block;
+        position: fixed;
+        cursor: pointer;
+        font-size: 30px;
+        color: cyan;
+        text-align: right;
+        padding: 10px;
+        z-index: 1200;
+        top: 5px;
+        right: 5px;
+    }
+    .tab {
+        display: none;
+        position: fixed; /* Fix it to the screen */
+        top: 0;
+        left: 50%;  /* chatgpt said 0% would work, it did not, jank fix: 50% left */
+        width: 100vw; /* Fullscreen width */
+        height: 100vh; /* Fullscreen height */
+        background-color: rgba(0, 0, 0, 0.9); /* Dark background with transparency */
+        border-radius: 10px;
+        z-index: 1000; /* Make sure it appears on top */
+        flex-direction: column; /* Stack the tabs vertically */
+        justify-content: center; /* Center the tabs vertically */
+        align-items: center; /* Center the tabs horizontally */
+        margin: 0;
+        padding: 0;
+    }
+    .tab.active {
+        display: flex;
+    }
+
+    .tab button {
+        padding: 20px;
+        font-size: 24px;
+        color: white;
+        background: none;
+        border: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    .tab button:hover {
+        background-color: rgba(255,255,255,0.2)
+    }
 }
