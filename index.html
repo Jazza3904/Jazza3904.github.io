@@ -35,13 +35,20 @@
         <!-- Tab content -->
         <!-- Info tab -->
         <div id="info" class="tabcontent">
-            <h1 class="title">Icey's page</h1>
+            <h1 class="title"><span style="color: cyan">Icey</span>'s page</h1>
             <div class="mainInfo">
-                <p>N🧊 to see you here! 👋 I am Icey67, you can also call me Icey.</p>
+                <p>N🧊 to see you here! 👋 I am <span style="color: cyan;">Icey</span><span style="color: #7100ff">6</span><span style="color: yellow">7</span>, you can also call me <span style="color: cyan">Icey</span>.</p>
                 <p>This website was forked from eveee00's code, so they're pretty much the same,</p>
                 <p>except for that this has my brand on it.</p>
                 <p>This is also my little corner of the internet, i guess.</p>
             </div>
+        </div>
+
+        <div class="theme-toggle">
+            <label class="switch">
+                <input type="checkbox" id="theme-switch">
+                <span class="slider round"></span>
+            </label>
         </div>
 
         <!-- links tab -->
@@ -49,16 +56,25 @@
             <div class="titlesubtext">
                 my socials:
             </div>
-            <div class="buttonsContainer">
-                <div class="containerBttn">
-                    <button type="button" class="bttn" onclick="window.open('https://www.youtube.com/@icey6719', '_blank')">my youtube</button>
+            <div class="socialbuttonsContainer">
+                <div class="bttnContainer">
+                    <button type="button" class="socialbttn" onclick="window.open('https://www.youtube.com/@icey6719', '_blank')" style="color: red">
+                        <img src="/media/youtube-logo.svg" alt="YouTube" height="15" style="margin-top:8px; margin-right: 8px;"> my youtube
+                    </button>
                 </div>
-                <div class="containerBttn">
-                    <button type="button" class="bttn" onclick="window.open('https://www.twitch.tv/icey_67', '_blank')">my twitch</button>
+                <div class="bttnContainer">
+                    <button type="button" class="socialbttn" onclick="window.open('https://www.twitch.tv/icey_67', '_blank')" style="color: purple">
+                        <img src="/media/twitch-logo.svg" alt="Twitch" height="20" style="margin-top:8px; margin-right: 8px;"> my twitch
+                    </button>
                 </div>
-                <div class="containerBttn">
-                    <img class="center-image" src="https://lanyard.cnrad.dev/api/469059297033191425" alt="Discord Status" width="350px">
+                <div class="bttnContainer">
+                    <button type="button" class="socialbttn" onclick="window.open('https://www.twitter.com/icey67_og', '_blank')" style="color: #249ef0">
+                        <img src="/media/twitter-logo.svg" alt="Twitter" height="20" style="margin-top: 8px; margin-right: 8px;"> my twitter
+                    </button>
                 </div>
+            </div>
+            <div class="containerBttn">
+                <img class="center-image" src="https://lanyard.cnrad.dev/api/469059297033191425" alt="Discord Status" width="350px">
             </div>
         </div>
 
