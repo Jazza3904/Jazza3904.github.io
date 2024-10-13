@@ -7,6 +7,25 @@ document.addEventListener('DOMContentLoaded', function() {
     if (randomNumber === 0) {                           //it hits the gold mine
         document.getElementById('logo').src = altLogo;  //it's in
     }
+
+    // Theme toggle functionality
+    const themeSwitch = document.getElementById('theme-switch');
+    const currentTheme = localStorage.getItem('theme') || 'dark';
+
+    if (currentTheme === 'light') {
+        document.body.classList.add('light-mode');
+        themeSwitch.checked = true;
+    }
+
+    themeSwitch.addEventListener('change', function() {
+        if (themeSwitch.checked) {
+            document.body.classList.add('light-mode');
+            localStorage.setItem('theme', 'light');
+        } else {
+            document.body.classList.remove('light-mode');
+            localStorage.setItem('theme', 'dark');
+        }
+    });
 });
 
 //random messages
