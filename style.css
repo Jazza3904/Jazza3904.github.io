@@ -37,6 +37,10 @@ body {
     overflow-y: auto;
 }
 
+a {
+    cursor:pointer;
+}
+
 .tab {
     position: fixed;
     top: 10px;
