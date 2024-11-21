@@ -1,8 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
-    if (randomNumber === 0) {                           //it hits the gold mine
-        document.getElementById('logo').src = altLogo;  //it's in
-    }
-
+{
     // Theme toggle functionality
     const themeSwitch = document.getElementById('theme-switch');
     const currentTheme = localStorage.getItem('theme') || 'dark';
@@ -21,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
             localStorage.setItem('theme', 'dark');
         }
     });
-});
+};
 
 //random messages
 //stuff for randomized footer
