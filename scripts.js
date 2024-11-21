@@ -1,9 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    //funny switcheroo logo
-    var mainLogo = '/media/IceyBanner.png'; //og logo
-    var altLogo = '/media/Jazzaicon.ico'; //lore
-    var randomNumber = Math.floor(Math.random() * 4); //randomly choose between 0-3 (25%)
-
     if (randomNumber === 0) {                           //it hits the gold mine
         document.getElementById('logo').src = altLogo;  //it's in
     }
