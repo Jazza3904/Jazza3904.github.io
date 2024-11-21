@@ -1,4 +1,10 @@
 {
+    var mainLogo = '/media/Iceybanner.png/';
+    var altLogo = '/media/Jazzaicon.ico';
+    var randomNumber = Math.floor(Math.random() * 4);
+    if (randomNumber === 0) {
+        document.getElementById('logo').src = altLogo;
+    }
     // Theme toggle functionality
     const themeSwitch = document.getElementById('theme-switch');
     const currentTheme = localStorage.getItem('theme') || 'dark';
