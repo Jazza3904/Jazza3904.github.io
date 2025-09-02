@@ -1,5 +1,5 @@
 {
-    var mainLogo = '/media/Iceybanner.png/';
+    var mainLogo = '/media/Jazzaicon.ico/';
     var altLogo = '/media/Jazzaicon.ico';
     var randomNumber = Math.floor(Math.random() * 4);
     if (randomNumber === 0) {
