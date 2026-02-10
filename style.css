@@ -1,0 +1,100 @@
+html {
+    background: black;
+    font-family: "Quicksand", monospace;
+    color: white;
+}
+
+nav {
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    border: 2px solid;
+    border-color: rgb(71, 71, 71);
+    background: black;
+    transition: 0.2s ease-in-out;
+}
+
+nav:hover {
+    border-color: white;
+}
+
+.navContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navElements {
+    text-align: right;
+    left: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+nav p {
+    margin: 0;
+    padding: 0;
+}
+nav h1 {
+    margin: 4px;
+}
+
+a {
+    text-decoration: white underline dotted;
+    color: white;
+    padding-top: 5px;
+    text-underline-offset: 2px;
+}
+
+a:hover {
+    text-decoration: white underline;
+}
+
+.navElements a {
+    margin: 8px;
+}
+
+section {
+    position: inherit;
+    margin:  1em auto 1em;
+    border: 2px solid;
+    border-color: rgb(71, 71, 71);
+    width: auto;
+    transition: 0.2s ease-out;
+
+}
+
+section:hover {
+    transition: 0.2s ease-in;
+    border-color: white;;
+}
+
+.mainContainer p, h1, h2{
+    margin: 6px;
+}
+
+.npIcons {
+    text-align: right;
+    left: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 5px;
+}
+
+/* 
+* there is DEFO a better way to do this
+* but i'm too lazy to actually do it in that better way lol
+*/
+
+
+.npIconsGrey {
+    filter: invert(22%) sepia(0%) saturate(525%) hue-rotate(203deg) brightness(90%) contrast(75%);
+}
+
+.discordStatus {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
