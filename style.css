@@ -1,5 +1,5 @@
 html {
-    background: black;
+    background: rgb(32, 8, 32);
     font-family: "Quicksand", monospace;
     color: white;
 }
@@ -10,12 +10,12 @@ nav {
     top: 0;
     border: 2px solid;
     border-color: rgb(71, 71, 71);
-    background: black;
+    background: rgb(32, 8, 32);
     transition: 0.2s ease-in-out;
 }
 
 nav:hover {
-    border-color: white;
+    border-color: rgb(255, 0, 234);
 }
 
 .navContainer {
@@ -67,7 +67,7 @@ section {
 
 section:hover {
     transition: 0.2s ease-in;
-    border-color: white;;
+    border-color: rgb(255, 0, 234);
 }
 
 .mainContainer p, h1, h2{
